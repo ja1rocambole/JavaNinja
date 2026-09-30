@@ -1,6 +1,6 @@
-package NivelBasico.Desafio01;
+package NivelBasico.Desafios;
 
-public class Desafio {
+public class Desafio01 {
     public static void main(String[] args) {
 
         String nomeNinja1 = "Narutinho";
