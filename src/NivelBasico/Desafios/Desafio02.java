@@ -4,65 +4,51 @@ import java.util.Scanner;
 
 public class Desafio02 {
     public static void main(String[] args) {
-        String[] ninjas = new String[13];
-        Scanner entradaNinja = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        Scanner entradaMenu = new Scanner(System.in);
-        System.out.println("Escolha uma opçao: \n " +
-                "(1) Cadastrar um ninja \n " +
-                "(2) Listar todos os ninjas \n " +
-                "(4) Fechar menu");
+        String[] ninjas = new String[10];
+        int opçao = 0;
 
-        int escolhaMenu = entradaMenu.nextInt();
+        while (opçao != 3){
+            System.out.println("MENU NINJA");
+            System.out.println("1. Cadastrar ninja");
+            System.out.println("2. Listar ninjas");
+            System.out.println("3. Sair");
+            System.out.println("Escolha uma opção:");
 
-        while (escolhaMenu != 4) {
+            opçao = scanner.nextInt();
+            scanner.nextLine();
 
-
-            switch (escolhaMenu) {
+            switch (opçao){
                 case 1:
-                    System.out.println("Insira o nome do ninja");
-                    String nomeNinja = entradaNinja.nextLine();
+                    System.out.println("Cadastro");
+
+                    String nomeNinja = scanner.nextLine();
+
+
 
                     for (int i = 0; i < ninjas.length; i++) {
-                        if (ninjas[i] == null) {
-                            ninjas[i] = nomeNinja;
+                        if (ninjas[i] == null){
+                            ninjas[i]= nomeNinja;
                             break;
-                        } else {
-                            continue;
-                        }
+                        };
                     }
-                    System.out.println("Escolha uma opçao: \n " +
-                            "(1) Cadastrar um ninja \n " +
-                            "(2) Listar todos os ninjas \n " +
-                            "(4) Fechar menu");
-                    escolhaMenu = entradaMenu.nextInt();
 
                     break;
                 case 2:
-                    System.out.println("Lista de Ninjas");
-
-
+                    System.out.println("Listagem");
                     for (int i = 0; i < ninjas.length; i++) {
-                        if (ninjas[i] != null) {
-                            System.out.println(ninjas[i]);
-                        }
-
+                        System.out.println(ninjas[i]);
                     }
-
-                    System.out.println("Escolha uma opçao: \n " +
-                            "(1) Cadastrar um ninja \n " +
-                            "(2) Listar todos os ninjas \n " +
-                            "(4) Fechar menu");
-                    escolhaMenu = entradaMenu.nextInt();
-
+                    break;
+                case 3:
+                    System.out.println("Saida");
                     break;
                 default:
                     System.out.println("VC É BURRO!");
+                    break;
             }
-            ;
-        }
 
-        entradaMenu.close();
-        entradaNinja.close();
+        }
     }
 }
