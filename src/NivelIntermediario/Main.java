@@ -21,5 +21,12 @@ public class Main {
 
         int quantoTempoFalta = Sasuke.AnosParaSeTornarHokage(40);
 //        System.out.println("Quantos anos faltam para se tornar hokage " + quantoTempoFalta);
+
+        Nasuke Nasuke = new Nasuke();
+        Nasuke.nome = "Nasuke Uzumaki Uchira";
+        Nasuke.aldeia = "Akdeia da Folha";
+        Nasuke.idade = 17;
+
+        Nasuke.AtivarFanService();
     }
 }
