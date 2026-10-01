@@ -5,15 +5,6 @@ public class Ninja {
     String aldeia;
     int idade;
 
-    public void SharinganAtivado(){
-        if (nome.contains("Uchira")){
-
-        System.out.println("Sharingan ativou!");
-        }else {
-            System.out.println("Vc não é Uchira!");
-        }
-    }
-
     public String EuSouUmNinja(){
         return "Oi, eu sou um ninja!";
     }
