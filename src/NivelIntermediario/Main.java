@@ -1,7 +1,5 @@
 package NivelIntermediario;
 
-import NivelIntermediario.Desafios.Hokage;
-
 public class Main {
     public static void main(String[] args) {
         Uzumaki Naruto = new Uzumaki();
@@ -35,8 +33,8 @@ public class Main {
         Nasuke.AtivarFanService();
 
 
-        Hokage Hashirama = new Hokage("Hashirama", 100, true);
+        Hokage Hashirama = new Hokage("Hashirama", 100, true, "Folha", "Nenhuma", 1.60);
 
-        
+
     }
 }

@@ -1,4 +1,4 @@
-package NivelIntermediario.Desafios;
+package NivelIntermediario;
 
 public class Hokage {
         String nome;
