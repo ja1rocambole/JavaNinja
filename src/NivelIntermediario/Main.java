@@ -33,8 +33,9 @@ public class Main {
         Nasuke.AtivarFanService();
 
 
-        Hokage Hashirama = new Hokage("Hashirama", 100, true, "Folha", "Nenhuma", 1.60);
+        Senju Hashirama = new Senju("Hashirama", 100, true, "Folha", "Nenhuma", 1.60);
 
+        Hashirama.sabedoriaHokage();
 
     }
 }

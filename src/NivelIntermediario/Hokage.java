@@ -1,12 +1,14 @@
 package NivelIntermediario;
 
-public class Hokage {
+public abstract class Hokage {
         String nome;
         int idade;
         boolean vivoOuNao;
         String aldeia;
         String missoes;
         double altura;
+
+        public abstract void sabedoriaHokage();
 
 //  Toda classe já tem um construtor sem argumentos desde que é criada
        public Hokage(){
