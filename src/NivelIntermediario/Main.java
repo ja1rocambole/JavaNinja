@@ -9,12 +9,15 @@ public class Main {
 
         Naruto.MuitoChakara();
 
+        Naruto.HabilidadeEspecial();
+
         Uchira Sasuke = new Uchira();
         Sasuke.nome = "Sasuke Uchira";
         Sasuke.aldeia = "Akdeia da Folha";
         Sasuke.idade = 17;
 
         Sasuke.SharinganAtivado();
+        Sasuke.HabilidadeEspecial();
 
 //        String mensagem = Sasuke.EuSouUmNinja();
 //        System.out.println(mensagem);

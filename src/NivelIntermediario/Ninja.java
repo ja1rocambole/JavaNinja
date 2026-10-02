@@ -10,8 +10,10 @@ public class Ninja {
     }
 
     public int AnosParaSeTornarHokage(int idadeMinima){
-
-
         return idadeMinima - idade;
     };
+
+    public void HabilidadeEspecial(){
+        System.out.println("Eu sou " + nome + " e esse é meu ataque especial");
+    }
 }

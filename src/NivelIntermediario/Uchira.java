@@ -9,4 +9,10 @@ public class Uchira extends Ninja {
             System.out.println("Vc não é Uchira!");
         }
     }
+
+    @Override
+    public void HabilidadeEspecial() {
+        System.out.println("Eu sou " + nome + " e meu ataque é do tipo fogo");
+    }
 }
+
